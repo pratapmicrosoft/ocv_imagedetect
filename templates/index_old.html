@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8  offset-lg-2">
+                <h3 class="mt-5">Object Detection</h3>
+                <table style="width:90%"> 
+                    <tr>
+                        <td >
+                            <img src="{{url_for('original_feed')}}" width="50%">
+                        </td>
+                        <td>
+                            <img src="{{ url_for('video_feed') }}" width="50%">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        alert("print")
+        alert({{ url_for('original_feed')}})
+    </script>
+    </body>
+
+</html>
